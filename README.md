@@ -16,3 +16,13 @@ Usage:
 # multiple files?!
 ./ntp_timestamp_sanifier.rb peers peers-20170401 peers-20170402
 ```
+
+```
+$ cat peers
+57844 27156.724 127.0.0.1 9014 0.005995526 0.032311653 3.937740536 0.002301804
+
+$ ./ntp_timestamp_sanifier.rb peers
+
+$ cat peers.converted
+2017-04-01 02:32:36-0500 127.0.0.1 9014 0.005995526 0.032311653 3.937740536 0.002301804
+```
